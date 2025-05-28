@@ -481,6 +481,7 @@ Screens:
       - Button2:
           Control: FluentV8/Button@1.5.13
           Properties:
+            FillColor: =RGBA(246, 88, 16, 1)
             OnSelect: =Navigate(Screen1)
             Text: ="Back to browse"
             Width: =144
@@ -489,6 +490,7 @@ Screens:
       - Button3:
           Control: FluentV8/Button@1.5.13
           Properties:
+            FillColor: =RGBA(99, 139, 44, 1)
             OnSelect: =SubmitForm(NewForm) ;Navigate(New)
             Text: ="Save"
             X: =104

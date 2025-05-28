@@ -1,8 +1,8 @@
 <ImportExportXml version="9.2.25043.222" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25043.222" OrganizationSchemaType="Core" CRMServerServiceabilityVersion="9.2.25043.00222">
   <SolutionManifest>
-    <UniqueName>ExportComponentsfa5f496c20884dc297aeeff724708a3f</UniqueName>
+    <UniqueName>ExportComponentsceb3a64788c541c098487d77fc759270</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="ExportComponentsfa5f496c20884dc297aeeff724708a3f" languagecode="1033" />
+      <LocalizedName description="ExportComponentsceb3a64788c541c098487d77fc759270" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
     <Version>1.0</Version>

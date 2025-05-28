@@ -6120,6 +6120,12 @@
             "RuleProviderType": "Unknown"
           },
           {
+            "Property": "FillColor",
+            "Category": "Data",
+            "InvariantScript": "RGBA(99, 139, 44, 1)",
+            "RuleProviderType": "Unknown"
+          },
+          {
             "Property": "PCFTeamsTheme",
             "Category": "Design",
             "InvariantScript": "\"default\"",
@@ -6198,6 +6204,14 @@
             "NameMapSourceSchema": "?",
             "IsLockable": false,
             "AFDDataSourceName": ""
+          },
+          {
+            "InvariantPropertyName": "FillColor",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "NameMapSourceSchema": "?",
+            "IsLockable": false,
+            "AFDDataSourceName": ""
           }
         ],
         "IsLocked": false,
@@ -6241,6 +6255,12 @@
             "Property": "Text",
             "Category": "Data",
             "InvariantScript": "\"Back to browse\"",
+            "RuleProviderType": "Unknown"
+          },
+          {
+            "Property": "FillColor",
+            "Category": "Data",
+            "InvariantScript": "RGBA(246, 88, 16, 1)",
             "RuleProviderType": "Unknown"
           },
           {
@@ -6319,6 +6339,14 @@
             "InvariantPropertyName": "OnSelect",
             "AutoRuleBindingEnabled": false,
             "AutoRuleBindingString": "false",
+            "NameMapSourceSchema": "?",
+            "IsLockable": false,
+            "AFDDataSourceName": ""
+          },
+          {
+            "InvariantPropertyName": "FillColor",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
             "NameMapSourceSchema": "?",
             "IsLockable": false,
             "AFDDataSourceName": ""

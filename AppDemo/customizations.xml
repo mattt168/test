@@ -13,11 +13,11 @@
   <CanvasApps>
     <CanvasApp>
       <Name>cr0fa_appdemo2_5c004</Name>
-      <AppVersion>2025-05-27T05:24:54Z</AppVersion>
+      <AppVersion>2025-05-28T16:43:01Z</AppVersion>
       <Status>Ready</Status>
       <CreatedByClientVersion>3.25051.13.0</CreatedByClientVersion>
       <MinClientVersion>3.25051.13.0</MinClientVersion>
-      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.25051.13","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20250527T025333Z-3.25051.13.0"}</Tags>
+      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.25051.13","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20250527T052454Z-3.25051.13.0"}</Tags>
       <IsCdsUpgraded>0</IsCdsUpgraded>
       <GalleryItemId xsi:nil="true"></GalleryItemId>
       <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>

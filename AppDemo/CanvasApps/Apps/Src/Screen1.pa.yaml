@@ -107,7 +107,7 @@ Screens:
           Properties:
             OnSelect: =Navigate(New)
             Text: ="New record"
-            X: =240
+            X: =396
             Y: =16
       - Icon1:
           Control: Classic/Icon@2.5.0
