@@ -1,0 +1,51 @@
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.25043.222" OrganizationSchemaType="Core" CRMServerServiceabilityVersion="9.2.25043.00222">
+  <Entities></Entities>
+  <Roles></Roles>
+  <Workflows></Workflows>
+  <FieldSecurityProfiles></FieldSecurityProfiles>
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <EntityDataProviders />
+  <CanvasApps>
+    <CanvasApp>
+      <Name>cr0fa_appdemo2_5c004</Name>
+      <AppVersion>2025-05-27T05:24:54Z</AppVersion>
+      <Status>Ready</Status>
+      <CreatedByClientVersion>3.25051.13.0</CreatedByClientVersion>
+      <MinClientVersion>3.25051.13.0</MinClientVersion>
+      <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.25051.13","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20250527T025333Z-3.25051.13.0"}</Tags>
+      <IsCdsUpgraded>0</IsCdsUpgraded>
+      <GalleryItemId xsi:nil="true"></GalleryItemId>
+      <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+      <DisplayName>AppDemo2</DisplayName>
+      <Description xsi:nil="true"></Description>
+      <CommitMessage xsi:nil="true"></CommitMessage>
+      <Publisher xsi:nil="true"></Publisher>
+      <AuthorizationReferences>[]</AuthorizationReferences>
+      <ConnectionReferences>{"9821553b-0d20-4e49-8dc7-812a71531b34":{"id":"/providers/microsoft.powerapps/apis/shared_sharepointonline","displayName":"SharePoint","iconUri":"https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1745/1.0.1745.4169/sharepointonline/icon.png","dataSources":["Demo1"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"https://umassmed.sharepoint.com/sites/OBHDataManagement_Development":{"dataSources":{"Demo1":{"tableName":"1f68f85a-0ca5-4652-ad72-a286e2899f3a"}}}},"apiTier":"Standard","actions":["providers/PowerPlatform.Governance/Operations/Read","providers/PowerPlatform.Governance/Operations/Write"]}}</ConnectionReferences>
+      <DatabaseReferences>{}</DatabaseReferences>
+      <AppComponents>[]</AppComponents>
+      <AppComponentDependencies>[]</AppComponentDependencies>
+      <CanConsumeAppPass>1</CanConsumeAppPass>
+      <CanvasAppType>0</CanvasAppType>
+      <BypassConsent>0</BypassConsent>
+      <AdminControlBypassConsent>0</AdminControlBypassConsent>
+      <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+      <IntroducedVersion>1.0</IntroducedVersion>
+      <CdsDependencies>{"cdsdependencies":[]}</CdsDependencies>
+      <IsCustomizable>1</IsCustomizable>
+      <BackgroundImageUri>/CanvasApps/cr0fa_appdemo2_5c004_BackgroundImageUri</BackgroundImageUri>
+      <DocumentUri>/CanvasApps/cr0fa_appdemo2_5c004_DocumentUri.msapp</DocumentUri>
+      <AdditionalUris>
+        <AdditionalUri>/CanvasApps/cr0fa_appdemo2_5c004_AdditionalUris0_identity.json</AdditionalUri>
+      </AdditionalUris>
+    </CanvasApp>
+  </CanvasApps>
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>

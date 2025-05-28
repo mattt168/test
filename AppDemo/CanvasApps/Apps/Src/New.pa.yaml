@@ -1,0 +1,495 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  New:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      LoadingSpinnerColor: =RGBA(98, 100, 167, 1)
+      OnVisible: =NewForm(NewForm)
+    Children:
+      - NewForm:
+          Control: Form@2.4.3
+          Variant: Classic
+          Layout: Vertical
+          Properties:
+            BorderColor: =RGBA(243, 242, 241, 1)
+            DataSource: =Demo1
+            X: =40
+            Y: =40
+          Children:
+            - Title_DataCard1:
+                Control: TypedDataCard@1.0.7
+                Variant: PcfCoreTextualEditCard
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(243, 242, 241, 1)
+                  DataField: ="Title"
+                  Default: =ThisItem.Title
+                  DisplayName: =DataSourceInfo([@Demo1],DataSourceInfo.DisplayName,'Title')
+                  MaxLength: =DataSourceInfo([@Demo1], DataSourceInfo.MaxLength, 'Title')
+                  Required: =false
+                  Update: =DataCardValue1.Value
+                  Width: =266
+                  X: =0
+                  Y: =0
+                Children:
+                  - DataCardKey1:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        FontSize: =9
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =10
+                  - DataCardValue1:
+                      Control: FluentV8/TextBox@1.7.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Required: =Parent.Required
+                        Tooltip: =Parent.DisplayName
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey1.Y + DataCardKey1.Height + 4
+                  - ErrorMessage1:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        FontSize: =9
+                        Height: =30
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardValue1.Y + DataCardValue1.Height
+                  - StarVisible1:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Alignment: =Align.Center
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Y: =DataCardKey1.Y
+            - SCH_NAME_DataCard1:
+                Control: TypedDataCard@1.0.7
+                Variant: PcfCoreTextualEditCard
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(243, 242, 241, 1)
+                  DataField: ="SCH_NAME"
+                  Default: =ThisItem.SCH_NAME
+                  DisplayName: =DataSourceInfo([@Demo1],DataSourceInfo.DisplayName,'SCH_NAME')
+                  MaxLength: =DataSourceInfo([@Demo1], DataSourceInfo.MaxLength, 'SCH_NAME')
+                  Required: =false
+                  Update: =DataCardValue2.Value
+                  Width: =266
+                  X: =1
+                  Y: =0
+                Children:
+                  - DataCardKey2:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        FontSize: =9
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =10
+                  - DataCardValue2:
+                      Control: FluentV8/TextBox@1.7.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Required: =Parent.Required
+                        Tooltip: =Parent.DisplayName
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey2.Y + DataCardKey2.Height + 4
+                  - ErrorMessage2:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        FontSize: =9
+                        Height: =30
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardValue2.Y + DataCardValue2.Height
+                  - StarVisible2:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Alignment: =Align.Center
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Y: =DataCardKey2.Y
+            - ADDRESS_DataCard1:
+                Control: TypedDataCard@1.0.7
+                Variant: PcfCoreTextualEditCard
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(243, 242, 241, 1)
+                  DataField: ="ADDRESS"
+                  Default: =ThisItem.ADDRESS
+                  DisplayName: =DataSourceInfo([@Demo1],DataSourceInfo.DisplayName,'ADDRESS')
+                  MaxLength: =DataSourceInfo([@Demo1], DataSourceInfo.MaxLength, 'ADDRESS')
+                  Required: =false
+                  Update: =DataCardValue3.Value
+                  Width: =266
+                  X: =2
+                  Y: =0
+                Children:
+                  - DataCardKey3:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        FontSize: =9
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =10
+                  - DataCardValue3:
+                      Control: FluentV8/TextBox@1.7.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Required: =Parent.Required
+                        Tooltip: =Parent.DisplayName
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey3.Y + DataCardKey3.Height + 4
+                  - ErrorMessage3:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        FontSize: =9
+                        Height: =30
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardValue3.Y + DataCardValue3.Height
+                  - StarVisible3:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Alignment: =Align.Center
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Y: =DataCardKey3.Y
+            - CITY_DataCard1:
+                Control: TypedDataCard@1.0.7
+                Variant: PcfCoreTextualEditCard
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(243, 242, 241, 1)
+                  DataField: ="CITY"
+                  Default: =ThisItem.CITY
+                  DisplayName: =DataSourceInfo([@Demo1],DataSourceInfo.DisplayName,'CITY')
+                  MaxLength: =DataSourceInfo([@Demo1], DataSourceInfo.MaxLength, 'CITY')
+                  Required: =false
+                  Update: =DataCardValue4.Value
+                  Width: =266
+                  X: =0
+                  Y: =1
+                Children:
+                  - DataCardKey4:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        FontSize: =9
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =10
+                  - DataCardValue4:
+                      Control: FluentV8/TextBox@1.7.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Required: =Parent.Required
+                        Tooltip: =Parent.DisplayName
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey4.Y + DataCardKey4.Height + 4
+                  - ErrorMessage4:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        FontSize: =9
+                        Height: =30
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardValue4.Y + DataCardValue4.Height
+                  - StarVisible4:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Alignment: =Align.Center
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Y: =DataCardKey4.Y
+            - ZIPCODE_DataCard1:
+                Control: TypedDataCard@1.0.7
+                Variant: PcfCoreTextualEditCard
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(243, 242, 241, 1)
+                  DataField: ="ZIPCODE"
+                  Default: =ThisItem.ZIPCODE
+                  DisplayName: =DataSourceInfo([@Demo1],DataSourceInfo.DisplayName,'ZIPCODE')
+                  MaxLength: =DataSourceInfo([@Demo1], DataSourceInfo.MaxLength, 'ZIPCODE')
+                  Required: =false
+                  Update: =DataCardValue5.Value
+                  Width: =266
+                  X: =1
+                  Y: =1
+                Children:
+                  - DataCardKey5:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        FontSize: =9
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =10
+                  - DataCardValue5:
+                      Control: FluentV8/TextBox@1.7.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Required: =Parent.Required
+                        Tooltip: =Parent.DisplayName
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey5.Y + DataCardKey5.Height + 4
+                  - ErrorMessage5:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        FontSize: =9
+                        Height: =30
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardValue5.Y + DataCardValue5.Height
+                  - StarVisible5:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Alignment: =Align.Center
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Y: =DataCardKey5.Y
+            - SCH_LABEL_DataCard1:
+                Control: TypedDataCard@1.0.7
+                Variant: PcfCoreTextualEditCard
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(243, 242, 241, 1)
+                  DataField: ="SCH_LABEL"
+                  Default: =ThisItem.SCH_LABEL
+                  DisplayName: =DataSourceInfo([@Demo1],DataSourceInfo.DisplayName,'SCH_LABEL')
+                  MaxLength: =DataSourceInfo([@Demo1], DataSourceInfo.MaxLength, 'SCH_LABEL')
+                  Required: =false
+                  Update: =DataCardValue6.Value
+                  Width: =266
+                  X: =2
+                  Y: =1
+                Children:
+                  - DataCardKey6:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        FontSize: =9
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =10
+                  - DataCardValue6:
+                      Control: FluentV8/TextBox@1.7.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Required: =Parent.Required
+                        Tooltip: =Parent.DisplayName
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey6.Y + DataCardKey6.Height + 4
+                  - ErrorMessage6:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        FontSize: =9
+                        Height: =30
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardValue6.Y + DataCardValue6.Height
+                  - StarVisible6:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Alignment: =Align.Center
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Y: =DataCardKey6.Y
+            - SCH_TYPE_DataCard1:
+                Control: TypedDataCard@1.0.7
+                Variant: PcfCoreTextualEditCard
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(243, 242, 241, 1)
+                  DataField: ="SCH_TYPE"
+                  Default: =ThisItem.SCH_TYPE
+                  DisplayName: =DataSourceInfo([@Demo1],DataSourceInfo.DisplayName,'SCH_TYPE')
+                  MaxLength: =DataSourceInfo([@Demo1], DataSourceInfo.MaxLength, 'SCH_TYPE')
+                  Required: =false
+                  Update: =DataCardValue7.Value
+                  Width: =266
+                  X: =0
+                  Y: =2
+                Children:
+                  - DataCardKey7:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        FontSize: =9
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Tooltip: =Parent.DisplayName
+                        VerticalAlignment: =VerticalAlign.Bottom
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =10
+                  - DataCardValue7:
+                      Control: FluentV8/TextBox@1.7.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Required: =Parent.Required
+                        Tooltip: =Parent.DisplayName
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey7.Y + DataCardKey7.Height + 4
+                  - ErrorMessage7:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        Color: =Color.Red
+                        FontSize: =9
+                        Height: =30
+                        Text: =Parent.Error
+                        Tooltip: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardValue7.Y + DataCardValue7.Height
+                  - StarVisible7:
+                      Control: FluentV8/Label@1.8.6
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Alignment: =Align.Center
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Y: =DataCardKey7.Y
+      - Button2:
+          Control: FluentV8/Button@1.5.13
+          Properties:
+            OnSelect: =Navigate(Screen1)
+            Text: ="Back to browse"
+            Width: =144
+            X: =429
+            Y: =363
+      - Button3:
+          Control: FluentV8/Button@1.5.13
+          Properties:
+            OnSelect: =SubmitForm(NewForm) ;Navigate(New)
+            Text: ="Save"
+            X: =104
+            Y: =363
